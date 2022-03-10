@@ -25,7 +25,7 @@ export const FinalPage = () => {
                         React-Form
                         <span>React-form</span>
                         <span>React-form</span>
-                        <span>Eliude</span>
+                        <span>{state.name.split(' ')[0]}</span>
                     </h1>
                     <a href='/'>Sign Out</a>
                 </C.Header>
