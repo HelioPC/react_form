@@ -1,9 +1,6 @@
 import { Link } from 'react-router-dom';
+import { MdPerson, MdMenuBook, MdEmail } from 'react-icons/md'
 import * as C from './style';
-
-import { ReactComponent as ProfileIcon } from '../../svgs/profile.svg';
-import { ReactComponent as MailIcon } from '../../svgs/mail.svg';
-import { ReactComponent as BookIcon } from '../../svgs/book.svg';
 
 type Props = {
     title: string;
@@ -23,13 +20,13 @@ export const Sidebar = ({title, description, icon, path, active}: Props) => {
                 </C.Info>
                 <C.IconArea active={active}>
                     {icon === 'profile' &&
-                        <ProfileIcon fill='white' width={24} height={24} />
+                        <MdPerson fill='white' width={24} height={24} />
                     }
                     {icon === 'book' &&
-                        <BookIcon fill='white' width={24} height={24} />
+                        <MdMenuBook fill='white' width={24} height={24} />
                     }
                     {icon === 'mail' &&
-                        <MailIcon fill='white' width={24} height={24} />
+                        <MdEmail fill='white' width={24} height={24} />
                     }
                 </C.IconArea>
                 <C.Point active={active}></C.Point>

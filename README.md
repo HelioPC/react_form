@@ -1,9 +1,5 @@
 # React form with typescript
 
-## About
-
-Um cadastro para developers feito com react & typescript, feito através do tutorial do professor [Bonieky Lacerda](https://github.com/suporteb7web). Clique [aqui.](https://www.youtube.com/watch?v=W1Ed9TEMGJU) para ver o tutorial.
-
 ## Project
 
 ### First Page

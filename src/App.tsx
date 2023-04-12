@@ -1,12 +1,21 @@
-import { Router } from "./router";
-import { FormProvider } from './contexts/FormContext';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { FinalPage } from "./pages/FinalPage";
 
-const App = () => {
-  return (
-    <FormProvider>
-      <Router />
-    </FormProvider>
-  );
+import { FormStep1 } from "./pages/FormStep1";
+import { FormStep2 } from "./pages/FormStep2";
+import { FormStep3 } from "./pages/FormStep3";
+
+const AppRouter = () => {
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<FormStep1 />} />
+                <Route path='/step2' element={<FormStep2 />} />
+                <Route path='/step3' element={<FormStep3 />} />
+                <Route path='/infos' element={<FinalPage />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
-export default App;
+export default AppRouter
